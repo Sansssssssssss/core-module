@@ -1,0 +1,22 @@
+#cache:
+#  key: ${CI_COMMIT_REF_SLUG}
+#  paths:
+#    - .m2/repository
+
+variables:
+#  MAVEN_OPTS: "-Dmaven.repo.local=.m2/repository"
+  MAVEN_CLI_OPTS: "-B"
+
+stages:
+  - install
+
+build-master:
+#  image: maven:3.8.2-jdk-8
+  stage: install
+  script:
+    - echo "build start......"
+    - mvn $MAVEN_CLI_OPTS install
+    - echo "build success......"
+  only:
+    - master
+
