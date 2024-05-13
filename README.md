@@ -3,6 +3,7 @@
 | 模块                         | 描述                                    |
 |----------------------------|---------------------------------------|
 | core-common                | 工具类库                                 |
+| core-pattern               | 封装常用设计模式                                 |
 | core-hystrix-fallback      | 基于 APT 自动生成 Hystrix Fallback 方法模板       |
 | core-security              | 封装 Spring Security 公共类                |
 | core-starter-async         | 异步、线程池 Stater                         |
